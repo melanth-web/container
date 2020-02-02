@@ -1,0 +1,30 @@
+{
+    "name": "melanth-web/container",
+    "description": "A dependency injection container manages objects.",
+    "type": "library",
+    "require": {
+        "php": "^7.2.3",
+        "melanth-web/contracts": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5|^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mong",
+            "email": "melanth.web@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Melanth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Melanth\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
