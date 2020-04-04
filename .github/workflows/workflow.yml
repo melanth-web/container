@@ -6,6 +6,9 @@ jobs:
   melanth-tests:
 
     runs-on: ubuntu-latest
+    
+    container:
+      image: prooph/composer:7.2
 
     steps:
     - uses: actions/checkout@v2
