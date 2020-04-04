@@ -1,6 +1,6 @@
 <?php
 
-namespace Melanth\Test\Container;
+namespace Melanth\Tests\Container;
 
 use stdClass;
 use Closure;
@@ -168,12 +168,12 @@ class ContainerTest extends TestCase
 
 interface ContainerConcreteContract
 {
-    
+
 }
 
 class ContainerConcreteStub implements ContainerConcreteContract
 {
-    
+
 }
 
 class ContainerWithBinding
