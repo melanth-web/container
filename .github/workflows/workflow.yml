@@ -6,13 +6,10 @@ jobs:
   melanth-tests:
 
     runs-on: ubuntu-latest
-    
-    container:
-      image: prooph/composer:7.2
 
     steps:
     - uses: actions/checkout@v2
-
+    
     - name: Validate composer.json and composer.lock
       run: composer validate
 
@@ -23,5 +20,5 @@ jobs:
       env:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
-      run: vendor/bin/phpunit
+      run: vendor/bin/phpstan analyse --error-format=checkstyle | cs2pr
   
